@@ -116,7 +116,7 @@ const VueTranslate = {
             directives: {
                 translate: function (el) {
                     if (!el.$translateKey)
-                        el.$translateKey = el.innerText;
+                        el.$translateKey = el.innerText.trim();
 
                     let text = this.$translate.text(el.$translateKey);
 
